@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+# Write a program that reads a list of numbers until EOI (CTRL-D) and then 
+# prints for each number the corresponding person's name
+# from the hardcoded list
+
+@name = qw/ fred betty barney dino wilma pebbles bamm-bamm /;
+
+print "Enter a number on each line from 1-7:\n";
+chomp(@numbers = <STDIN>); #take input from user
+
+#foreach loop to print values from @name array based on number input
+foreach(@numbers){
+	print "$name[$_-1]\n"; #decrement because array values are 0-6
+}
