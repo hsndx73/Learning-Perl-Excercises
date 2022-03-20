@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+# take a list of strigs then press CTRL-D to end and print the reverse
+# the strings.
+
+@liststrings = <STDIN>;
+$reverseStrings = reverse(@liststrings);
+print $reverseStrings;
